@@ -166,7 +166,7 @@ class MySQL extends AQueryWriter implements QueryWriter
 			MYSQL::C_DATATYPE_SPECIAL_JSON     => ' JSON '
 		);
 
-		$this->sqltype_typeno = array();
+		$this->typeno_sqltype = array();
 
 		foreach ( $this->typeno_sqltype as $k => $v ) {
 			$this->sqltype_typeno[trim( strtolower( $v ) )] = $k;
