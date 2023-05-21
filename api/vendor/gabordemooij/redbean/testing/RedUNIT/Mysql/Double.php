@@ -34,7 +34,7 @@ class Double extends Mysql
 		$writer  = $toolbox->getWriter();
 		$redbean = $toolbox->getRedBean();
 		$pdo     = $adapter->getDatabase();
-		$largeDouble = 999999888889999922211111; //8.88889999922211e+17;
+		$largeDouble = 8.88889999922211e+17; //8.88889999922211e+17;
 		$page = $redbean->dispense( "page" );
 		$page->weight = $largeDouble;
 		$id = $redbean->store( $page );
