@@ -3,5 +3,5 @@ header('Access-Control-Allow-Origin: *');
 require_once __DIR__ . "/vendor/autoload.php";
 class_alias("\RedBeanPHP\R", "\R");
 R::setup("mysql:host=sql7.freemysqlhosting.net;dbname=sql7618477", 'sql7618477', 'd1VghpTHzr');
-echo json_encode(R::findAll("products", "WHERE cat = ? and id < 50", [$_GET['cat']]), JSON_UNESCAPED_UNICODE);
+echo json_encode(R::findAll("products", "WHERE cat = ? LIMIT 50", [$_GET['cat']]), JSON_UNESCAPED_UNICODE);
 ?>
