@@ -10,25 +10,25 @@ foreach ($prods as $prod) {
     if ($prod->id != 1436) echo ",";
 }
 echo ']';
-echo "[";
+echo "\n[";
 foreach ($prods as $prod) {
     echo '"'+$prod->title+'"';
     if ($prod->id != 1436) echo ",";
 }
 echo ']';
-echo "[";
+echo "\n[";
 foreach ($prods as $prod) {
     echo '"'+$prod->num+'"';
     if ($prod->id != 1436) echo ",";
 }
 echo ']';
-echo "[";
+echo "\n[";
 foreach ($prods as $prod) {
     echo $prod->price;
     if ($prod->id != 1436) echo ",";
 }
 echo ']';
-echo "[";
+echo "\n[";
 foreach ($prods as $prod) {
     echo $prod->cat;
     if ($prod->id != 1436) echo ",";
