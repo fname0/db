@@ -7,7 +7,7 @@ $prods = R::findAll('products');
 echo "[";
 foreach ($prods as $prod) {
     echo $prod->id;
-    echo ",";
+    if ($prod->id != 1436) echo ",";
 }
 echo ']';
 ?>
