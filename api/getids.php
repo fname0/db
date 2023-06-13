@@ -30,7 +30,7 @@ foreach ($prods as $prod) {
 echo ']';
 echo "\n[";
 foreach ($prods as $prod) {
-    echo $prod->cat;
+    echo "'$prod->cat'";
     if ($prod->id != 1436) echo ",";
 }
 echo ']';
