@@ -12,13 +12,13 @@ foreach ($prods as $prod) {
 echo ']';
 echo "\n[";
 foreach ($prods as $prod) {
-    echo "$prod->title";
+    echo "'$prod->title'";
     if ($prod->id != 1436) echo ",";
 }
 echo ']';
 echo "\n[";
 foreach ($prods as $prod) {
-    echo "$prod->num";
+    echo "'$prod->num'";
     if ($prod->id != 1436) echo ",";
 }
 echo ']';
