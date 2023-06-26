@@ -17,11 +17,8 @@ curl_setopt($ch, CURLOPT_HEADER, false);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, array(
-    'file' => 'p',
+    'file' => $_FILES['file']['tmp_name'],
 ));
 $result = curl_exec($ch);
 curl_close($ch);
-// $img_name = "productImg/".$data->id.".png";
-// $tmp_img_name=$_FILES['file']['tmp_name'];
-// move_uploaded_file($tmp_img_name,$img_name);
 ?>
