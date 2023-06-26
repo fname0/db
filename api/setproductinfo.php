@@ -18,7 +18,7 @@ if (function_exists('curl_file_create')) {
 }
 $post = array('id' => $data->id,'file'=> $cFile);
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL,'http://95.174.102.106:7474/api/bridge.php');
+curl_setopt($ch, CURLOPT_URL,'http://95.174.102.106:7474/api/loadfile.php');
 curl_setopt($ch, CURLOPT_POST,1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 $result=curl_exec ($ch);
