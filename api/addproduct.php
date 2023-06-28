@@ -10,6 +10,7 @@ $article->num = $_POST['num'];
 $article->price = $_POST['price'];
 $article->cat = $_POST['cat'];
 $article->out = ucfirst($_POST['out']);
+$article->deleted = 0;
 R::store($article);
 if (function_exists('curl_file_create')) {
     $cFile = curl_file_create($_FILES['file']['tmp_name']);
