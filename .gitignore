@@ -4,3 +4,4 @@ api/loadfile.php
 api/getAllProducts.php
 api/getids.php
 api/productImg/
+api/tryOptAdmin/
